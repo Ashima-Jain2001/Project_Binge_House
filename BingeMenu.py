@@ -116,6 +116,139 @@ class Toplevel1:
         def noodlespos():
             global noodles_qty # inform funtion to use external variable `noodles_qty`
 
+            noodles_qty = noodles_qty + 1from tkinter import *
+import sys
+import time
+from tkinter.messagebox import showinfo
+import datetime
+
+try:
+    import Tkinter as tk
+except ImportError:
+    import tkinter as tk
+
+try:
+    import ttk
+    py3 = False
+except ImportError:
+    import tkinter.ttk as ttk
+    py3 = True
+
+
+
+            
+            
+
+def vp_start_gui():
+    '''Starting point when module is the main routine.'''
+    global val, w, root
+    root = tk.Tk()
+    top = Toplevel1 (root)
+   
+    root.mainloop()
+    
+    
+
+w = None
+def create_Toplevel1(rt, *args, **kwargs):
+    '''Starting point when module is imported by another module.
+       Correct form of call: 'create_Toplevel1(root, *args, **kwargs)' .'''
+    global w, w_win, root
+    
+    root = rt
+    w = tk.Toplevel (root)
+    top = Toplevel1 (w)
+
+    return (w, top)
+
+def destroy_Toplevel1():
+    global w
+    w.destroy()
+    w = None
+noodles_qty = 0
+burger_qty = 0
+pasta_qty = 0
+fries_qty = 0
+pizza_qty = 0
+wraps_qty = 0
+honeychilli_qty = 0
+coke_qty = 0
+icescream_qty = 0
+tea_qty = 0
+coffee_qty = 0
+shake_qty = 0
+water_qty = 0
+class Toplevel1:
+    
+    def __init__(self, top=None):
+        def reset():
+                   global noodles_qty
+                   global burger_qty
+                   global pasta_qty
+                   global fries_qty
+                   global pizza_qty
+                   global wraps_qty
+                   global honeychilli_qty
+                   global coke_qty
+                   global icescream_qty
+                   global tea_qty
+                   global shake_qty
+                   global coffee_qty
+                   global water_qty
+                   honeychilli_qty = 0
+                   wraps_qty = 0
+                   noodles_qty = 0
+                   burger_qty = 0
+                   pasta_qty = 0
+                   fries_qty = 0
+                   pizza_qty = 0
+                   coke_qty = 0
+                   icescream_qty = 0
+                   tea_qty = 0
+                   coffee_qty = 0
+                   shake_qty = 0
+                   water_qty = 0
+                   showinfo("Reset all Items", "All Items Reset!!")
+                   self.Label4.config(text="0")
+                   self.Label3.config(text="0")
+                   self.Label5.config(text="0")
+                   self.Label6.config(text="0")
+                   self.Label8.config(text="0")
+                   self.Label10.config(text='0')
+                   self.Label11.config(text='0')
+                   self.Label12.config(text='0')
+                   self.Label13.config(text='0')
+                   self.Label14.config(text='0')
+                   self.Label15.config(text='0')
+                   self.Label16.config(text='0')
+                   self.Label17.config(text='0')
+                   
+                    
+                
+              
+                
+                
+                
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#d9d9d9' # X11 color: 'gray85'
+        _ana2color = '#ececec' # Closest X11 color: 'gray92'
+
+        top.geometry("1920x1080+606+270")
+        top.minsize(120, 1)
+        top.maxsize(2000,2000)
+        top.resizable(1, 1)
+        top.title("BINGE HOUSE")
+        top.configure(background="#d9d9d9")
+        noodles_qty = 0
+        burger_qty = 0
+        pasta_qty = 0
+
+        def noodlespos():
+            global noodles_qty 
+
             noodles_qty = noodles_qty + 1
             print(noodles_qty)
             self.Label3 = tk.Label(top)
@@ -125,7 +258,7 @@ class Toplevel1:
             self.Label3.configure(foreground="#000000")
             self.Label3.configure(text=f'{noodles_qty}')
         def noodlesneg():
-            global noodles_qty # inform funtion to use external variable `noodles_qty`
+            global noodles_qty 
 
             noodles_qty = noodles_qty - 1
             if noodles_qty<0:
@@ -140,7 +273,7 @@ class Toplevel1:
             self.Label3.configure(text=f'{noodles_qty}')
             
         def burgerpos():
-            global burger_qty # inform funtion to use external variable `noodles_qty`
+            global burger_qty 
 
             burger_qty = burger_qty + 1
             print(noodles_qty)
@@ -151,7 +284,7 @@ class Toplevel1:
             self.Label4.configure(foreground="#000000")
             self.Label4.configure(text=burger_qty) 
         def burgerneg():
-            global burger_qty # inform funtion to use external variable `noodles_qty`
+            global burger_qty 
 
             burger_qty = burger_qty - 1
             if burger_qty<0:
@@ -166,7 +299,7 @@ class Toplevel1:
             self.Label4.configure(text=burger_qty)
 
         def pastapos():
-            global pasta_qty # inform funtion to use external variable `noodles_qty`
+            global pasta_qty 
             
             pasta_qty = pasta_qty + 1
             print(pasta_qty)
@@ -178,7 +311,7 @@ class Toplevel1:
             self.Label8.configure(text=pasta_qty) 
             
         def pastaneg():
-            global pasta_qty # inform funtion to use external variable `noodles_qty`
+            global pasta_qty 
 
             pasta_qty = pasta_qty - 1
             if pasta_qty<0:
@@ -192,7 +325,7 @@ class Toplevel1:
             self.Label8.configure(foreground="#000000")
             self.Label8.configure(text=pasta_qty)
         def friespos():
-            global fries_qty # inform funtion to use external variable `noodles_qty`
+            global fries_qty 
 
             fries_qty = fries_qty + 1
             if fries_qty<0:
@@ -206,7 +339,7 @@ class Toplevel1:
             self.Label5.configure(foreground="#000000")
             self.Label5.configure(text=fries_qty)
         def friesneg():
-            global fries_qty # inform funtion to use external variable `noodles_qty`
+            global fries_qty 
 
             fries_qty = fries_qty - 1
             if fries_qty<0:
@@ -221,7 +354,7 @@ class Toplevel1:
             self.Label5.configure(text=fries_qty)
             
         def pizzapos():
-            global pizza_qty # inform funtion to use external variable `noodles_qty`
+            global pizza_qty 
 
             pizza_qty = pizza_qty + 1
             if pizza_qty<0:
@@ -236,7 +369,7 @@ class Toplevel1:
             self.Label6.configure(text=pizza_qty)
             
         def pizzaneg():
-            global pizza_qty # inform funtion to use external variable `noodles_qty`
+            global pizza_qty 
 
             pizza_qty = pizza_qty - 1
             if pizza_qty<0:
@@ -251,7 +384,7 @@ class Toplevel1:
             self.Label6.configure(text=pizza_qty)
             
         def wrapspos():
-            global wraps_qty # inform funtion to use external variable `noodles_qty`
+            global wraps_qty 
 
             wraps_qty = wraps_qty + 1
             if wraps_qty<0:
@@ -266,7 +399,7 @@ class Toplevel1:
             self.Label10.configure(text=wraps_qty)
             
         def wrapsneg():
-            global wraps_qty # inform funtion to use external variable `noodles_qty`
+            global wraps_qty 
 
             wraps_qty = wraps_qty - 1
             if wraps_qty<0:
@@ -281,7 +414,7 @@ class Toplevel1:
             self.Label10.configure(text=wraps_qty)
             
         def honeychillipos():
-            global honeychilli_qty # inform funtion to use external variable `noodles_qty`
+            global honeychilli_qty 
 
             honeychilli_qty = honeychilli_qty + 1
             if honeychilli_qty<0:
@@ -296,7 +429,7 @@ class Toplevel1:
             self.Label11.configure(text=honeychilli_qty)
             
         def honeychillineg():
-            global honeychilli_qty # inform funtion to use external variable `noodles_qty`
+            global honeychilli_qty 
 
             honeychilli_qty = honeychilli_qty - 1
             if honeychilli_qty<0:
@@ -311,7 +444,7 @@ class Toplevel1:
             self.Label11.configure(text=honeychilli_qty)
             
         def cokepos():
-            global coke_qty # inform funtion to use external variable `noodles_qty`
+            global coke_qty 
 
             coke_qty = coke_qty + 1
             if coke_qty<0:
@@ -326,7 +459,7 @@ class Toplevel1:
             self.Label12.configure(text=coke_qty)
         
         def cokeneg():
-            global coke_qty # inform funtion to use external variable `noodles_qty`
+            global coke_qty 
 
             coke_qty = coke_qty - 1
             if coke_qty<0:
@@ -340,7 +473,7 @@ class Toplevel1:
             self.Label12.configure(foreground="#000000")
             self.Label12.configure(text=coke_qty)
         def icecreampos():
-            global icescream_qty # inform funtion to use external variable `noodles_qty`
+            global icescream_qty 
 
             icescream_qty = icescream_qty + 1
             if icescream_qty<0:
@@ -355,7 +488,7 @@ class Toplevel1:
             self.Label13.configure(text=icescream_qty)
             
         def icecreamneg():
-            global icescream_qty # inform funtion to use external variable `noodles_qty`
+            global icescream_qty 
 
             icescream_qty = icescream_qty - 1
             if icescream_qty<0:
@@ -370,7 +503,7 @@ class Toplevel1:
             self.Label13.configure(text=icescream_qty)
             
         def teapos():
-            global tea_qty # inform funtion to use external variable `noodles_qty`
+            global tea_qty 
 
             tea_qty = tea_qty + 1
             if tea_qty<0:
@@ -385,7 +518,7 @@ class Toplevel1:
             self.Label14.configure(text=tea_qty)
             
         def teaneg():
-            global tea_qty # inform funtion to use external variable `noodles_qty`
+            global tea_qty 
 
             tea_qty = tea_qty - 1
             if tea_qty<0:
@@ -398,6 +531,97 @@ class Toplevel1:
             self.Label14.configure(disabledforeground="#a3a3a3")
             self.Label14.configure(foreground="#000000")
             self.Label14.configure(text=tea_qty)
+            
+        def coffeepos():
+            global coffee_qty 
+
+            coffee_qty  = coffee_qty  + 1
+            if coffee_qty <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                coffee_qty =0
+            print(coffee_qty )
+            self.Label15 = tk.Label(top)
+            self.Label15.place(relx=0.35, rely=0.253, height=80, width=87)
+            self.Label15.configure(background="#FFC0CB")
+            self.Label15.configure(disabledforeground="#a3a3a3")
+            self.Label15.configure(foreground="#000000")
+            self.Label15.configure(text=coffee_qty)
+     
+        def coffeeneg():
+            global coffee_qty 
+
+            coffee_qty  = coffee_qty  - 1
+            if coffee_qty <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                coffee_qty =0
+            print(coffee_qty )
+            self.Label15 = tk.Label(top)
+            self.Label15.place(relx=0.35, rely=0.253, height=80, width=87)
+            self.Label15.configure(background="#FFC0CB")
+            self.Label15.configure(disabledforeground="#a3a3a3")
+            self.Label15.configure(foreground="#000000")
+            self.Label15.configure(text=coffee_qty)
+            
+        def shakepos():
+            global shake_qty 
+
+            shake_qty  = shake_qty   + 1
+            if shake_qty  <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                shake_qty  =0
+            print(shake_qty)
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.35, rely=0.363, height=80, width=87)
+            self.Label16.configure(background="#FFC0CB")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#000000")
+            self.Label16.configure(text=shake_qty)
+            
+        def shakeneg():
+            global shake_qty 
+
+            shake_qty = shake_qty   - 1
+            if shake_qty  <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                shake_qty  =0
+            print(shake_qty)
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.35, rely=0.363, height=80, width=87)
+            self.Label16.configure(background="#FFC0CB")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#000000")
+            self.Label16.configure(text=shake_qty)
+            
+        def waterpos():
+            global water_qty 
+
+            water_qty  = water_qty   + 1
+            if water_qty  <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                water_qty  =0
+            print(water_qty)
+            self.Label17 = tk.Label(top)
+            self.Label17.place(relx=0.35, rely=0.473, height=80, width=87)
+            self.Label17.configure(background="#FFC0CB")
+            self.Label17.configure(disabledforeground="#a3a3a3")
+            self.Label17.configure(foreground="#000000")
+            self.Label17.configure(text=water_qty)
+            
+        def waterneg():
+            global water_qty 
+
+            water_qty  = water_qty   - 1
+            if water_qty  <0:
+                showinfo("Error","Item cant be less than 0!!",icon='error')
+                water_qty  =0
+            print(water_qty)
+            self.Label17 = tk.Label(top)
+            self.Label17.place(relx=0.35, rely=0.473, height=80, width=87)
+            self.Label17.configure(background="#FFC0CB")
+            self.Label17.configure(disabledforeground="#a3a3a3")
+            self.Label17.configure(foreground="#000000")
+            self.Label17.configure(text=water_qty)
+            
             
             
             
@@ -649,6 +873,82 @@ class Toplevel1:
         self.Button2.configure(pady="0")
         self.Button2.configure(text='''Tea-''',command=teaneg)
         
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.253, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Coffee+''',command=coffeepos)
+        
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.300, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Coffee-''',command=coffeeneg)
+        
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.363, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Shake+''',command=shakepos)
+        
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.410, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Shake-''',command=shakeneg)
+        
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.473, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Water+''',command=waterpos)
+        
+        self.Button2 = tk.Button(top)
+        self.Button2.place(relx=0.4, rely=0.520, height=30, width=80)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d9d9d9")
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''Water-''',command=waterneg)
+        
+        
+        
+        
+        
         
        
        
@@ -696,6 +996,12 @@ class Toplevel1:
 
 if __name__ == '__main__':
     vp_start_gui()
+
+
+
+
+
+
 
 
 
