@@ -879,7 +879,19 @@ def back():
             self.Button2.configure(text='''Water-''',command=waterneg)
             
             
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.15, rely=0.275, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹150",font="bold")
             
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.15, rely=0.385, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹130",font="bold")
             
             
             
