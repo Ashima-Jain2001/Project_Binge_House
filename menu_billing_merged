@@ -879,6 +879,9 @@ def back():
             self.Button2.configure(text='''Water-''',command=waterneg)
             
             
+            ##------------------------------PRICE TAGS-----------------------------------------------------------            
+            
+            
             self.Label16 = tk.Label(top)
             self.Label16.place(relx=0.15, rely=0.275, height=30, width=100)
             self.Label16.configure(background="#696969")
@@ -893,6 +896,83 @@ def back():
             self.Label16.configure(foreground="#00FFFF")
             self.Label16.configure(text="₹130",font="bold")
             
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.15, rely=0.495, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹200",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.15, rely=0.605, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹140",font="bold")
+            
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.15, rely=0.715, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹300",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.30, rely=0.275, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹120",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.30, rely=0.385, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹180",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.30, rely=0.495, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹80",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.30, rely=0.605, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹150",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.30, rely=0.715, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹50",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.45, rely=0.275, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹60",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.45, rely=0.385, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹100",font="bold")
+            
+            self.Label16 = tk.Label(top)
+            self.Label16.place(relx=0.45, rely=0.495, height=30, width=100)
+            self.Label16.configure(background="#696969")
+            self.Label16.configure(disabledforeground="#a3a3a3")
+            self.Label16.configure(foreground="#00FFFF")
+            self.Label16.configure(text="₹40",font="bold")
             
             
            
