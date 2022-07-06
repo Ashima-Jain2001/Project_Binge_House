@@ -1,1 +1,1 @@
-Python project on restaurant management system(Billing module) using tkinter(GUI).
+Python project on restaurant billing system using tkinter(GUI).
